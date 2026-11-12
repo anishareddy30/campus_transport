@@ -1,0 +1,158 @@
+.live-location-card {
+  overflow: hidden;
+  background: #f8fafc;
+  border: 1px solid #edf0f4;
+  border-radius: 9px;
+}
+
+.live-location-visual {
+  position: relative;
+  overflow: hidden;
+  height: 151px;
+  background: linear-gradient(135deg, #f1f5f2, #f5f7fb);
+}
+
+.location-grid {
+  position: absolute;
+  inset: -35%;
+  background-image: linear-gradient(90deg, #fff 1px, transparent 1px), linear-gradient(#fff 1px, transparent 1px);
+  background-size: 25px 25px;
+  transform: rotate(-10deg);
+}
+
+.location-road {
+  position: absolute;
+  height: 13px;
+  background: #fff;
+  border: 1px solid #e6ebed;
+  border-right: 0;
+  border-left: 0;
+}
+
+.location-road-one {
+  top: 43%;
+  left: -5%;
+  width: 110%;
+  transform: rotate(-12deg);
+}
+
+.location-road-two {
+  top: 42%;
+  left: 27%;
+  width: 80%;
+  transform: rotate(49deg);
+}
+
+.location-beacon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  width: 39px;
+  height: 39px;
+  place-items: center;
+  color: #7d8ba0;
+  background: #fff;
+  border: 1px solid #e5e9f0;
+  border-radius: 50%;
+  box-shadow: 0 3px 12px #2536511c;
+  transform: translate(-50%, -50%);
+}
+
+.location-beacon.beacon-live {
+  color: #fff;
+  background: #506dd1;
+  border-color: #fff;
+  box-shadow: 0 0 0 7px #506dd12b, 0 3px 12px #25365124;
+}
+
+.location-coordinate-label {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+  display: flex;
+  min-height: 27px;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 8px;
+  color: #6d7d91;
+  background: #ffffffed;
+  border: 1px solid #edf0f4;
+  border-radius: 6px;
+  font-size: 8px;
+}
+
+.location-coordinate-label svg {
+  flex: 0 0 auto;
+  color: #536fc9;
+}
+
+.live-location-status {
+  display: flex;
+  min-height: 36px;
+  align-items: center;
+  gap: 7px;
+  padding: 0 10px;
+}
+
+.location-status-dot {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+  background: #aab4c2;
+  border-radius: 50%;
+}
+
+.location-status-dot.status-connected {
+  background: #45ac85;
+  box-shadow: 0 0 0 3px #e6f5ee;
+}
+
+.location-status-dot.status-offline {
+  background: #d78a67;
+  box-shadow: 0 0 0 3px #fff0e8;
+}
+
+.live-location-message {
+  overflow: hidden;
+  flex: 1;
+  color: #8390a3;
+  font-size: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.live-location-accuracy {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: #8c99aa;
+  font-size: 8px;
+  white-space: nowrap;
+}
+
+.location-service-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 8px 10px;
+  color: #9c6849;
+  background: #fff9f3;
+  border-top: 1px solid #f4ebdf;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.location-service-note svg {
+  flex: 0 0 auto;
+}
+
+.location-service-note code {
+  padding: 1px 3px;
+  color: #795b47;
+  background: white;
+  border: 1px solid #f0e5d8;
+  border-radius: 3px;
+  font-size: 7px;
+}

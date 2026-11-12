@@ -1,0 +1,24 @@
+{
+  "name": "driver-android",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~58.0.24",
+    "expo-dev-client": "~58.0.19",
+    "expo-location": "~58.0.21",
+    "expo-notifications": "~58.1.9",
+    "expo-status-bar": "~58.0.5",
+    "expo-system-ui": "~58.0.7",
+    "expo-task-manager": "~58.0.14",
+    "react": "19.3.0",
+    "react-native": "0.88.1"
+  },
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "prebuild:android": "expo prebuild --platform android",
+    "config:check": "expo config --type public"
+  },
+  "private": true
+}

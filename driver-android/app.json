@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Move Campus Driver",
+    "slug": "move-campus-driver",
+    "scheme": "movecampusdriver",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "description": "Android driver prototype for consent-based campus trip location sharing.",
+    "userInterfaceStyle": "light",
+    "platforms": [
+      "android"
+    ],
+    "android": {
+      "package": "com.movecampus.driver",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION",
+        "POST_NOTIFICATIONS"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Move Campus Driver to use your location while you are on an active trip.",
+          "locationAlwaysAndWhenInUsePermission": "Allow Move Campus Driver to share your location during an active trip, including when the app is in the background.",
+          "locationAlwaysPermission": "Allow Move Campus Driver to share your location during an active trip, including when the app is in the background.",
+          "isAndroidBackgroundLocationEnabled": true,
+          "isAndroidForegroundServiceEnabled": true,
+          "isIosBackgroundLocationEnabled": false
+        }
+      ],
+      "expo-task-manager",
+      [
+        "expo-notifications",
+        {
+          "color": "#4565d2"
+        }
+      ]
+    ]
+  }
+}
